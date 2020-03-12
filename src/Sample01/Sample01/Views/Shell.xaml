@@ -7,6 +7,10 @@
         Title="{Binding Title}" Height="450" Width="800">
     <!-- ViewModelLocator をつかうことで ViewModel を自動でバインドする -->
     <DockPanel LastChildFill="True">
+        <Border>
+            <Image Source="pack://application:,,,/Module;component/Resource/british-4912211_1920.jpg" Width="220"/>
+        </Border>
+        
         <ContentControl prism:RegionManager.RegionName="ContentRegion" Margin="5"></ContentControl>
 
     </DockPanel>

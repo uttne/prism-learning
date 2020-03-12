@@ -5,6 +5,6 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <StackPanel>
         <TextBlock Text="Startup" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        
+        <Button Command="{Binding GoNaviCommand}" Content="Go Navi"/>
     </StackPanel>
 </UserControl>

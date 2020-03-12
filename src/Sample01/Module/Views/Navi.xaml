@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <StackPanel>
-        <TextBlock Text="Navi" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        
-    </StackPanel>
+    <ScrollViewer CanContentScroll="False" VerticalScrollBarVisibility="Visible">
+        <StackPanel>
+            <TextBlock Text="Navi" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Button Content="Go View1" Command="{Binding GoView1Command}"/>
+            <Button Content="Go View2" Command="{Binding GoView2Command}"/>
+            <Button Content="Go View3" Command="{Binding GoView3Command}"/>
+            <Button Content="Go View4" Command="{Binding GoView4Command}"/>
+            <ContentControl prism:RegionManager.RegionName="{Binding RegionName}" Margin="5"></ContentControl>
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>
